@@ -15,8 +15,8 @@ let players = [
 
 function playerDiv(player) {
   let div = document.createElement("div");
-    let nickSpan = document.createElement("span");
-    nickSpan.textContent = player.nick;
-    
+  let nickSpan = document.createElement("span");
+  nickSpan.textContent = player.nick;
+
   let scoreSpan = document.createElement("span");
 }

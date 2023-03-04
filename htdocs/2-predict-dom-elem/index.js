@@ -17,9 +17,6 @@ function playerDiv(player) {
   let div = document.createElement("div");
   div.id = "container";
 
-  let h1 = document.createElement("h1");
-  h1.append("Player Spotlight");
-
   let nickSpan = document.createElement("span");
   nickSpan.textContent = player.nick;
 
@@ -37,4 +34,4 @@ function playerDiv(player) {
 
 let pThings = players.map((p) => playerDiv(p));
 
-document.querySelector("body").append(pThings[1]);
+document.querySelector("body").append(pThings.shift());

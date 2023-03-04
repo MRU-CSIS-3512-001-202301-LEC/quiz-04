@@ -7,12 +7,12 @@ function picsumImg(picsumData) {
   return img;
 }
 
-function picBoxFrom(picsumData) {
+function picBoxFrom(picsumData, boxText) {
   let div = document.createElement("div");
   div.classList.add("pic-box");
 
   let span = document.createElement("span");
-  span.textContent = "2023-03-12";
+  span.textContent = boxText;
   span.style.marginLeft = "30px";
 
   div.append(picsumImg(picsumData));
@@ -21,4 +21,6 @@ function picBoxFrom(picsumData) {
   return div;
 }
 
-document.querySelector("div#container").append(picBoxFrom(picsumData));
+let thingToAppend = picBoxFrom(picsumData, "make trax");
+
+document.querySelector("div#container").append(thingToAppend);

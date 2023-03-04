@@ -1,6 +1,13 @@
-.pic-box {
-    background-color: #bada55;
-    display: flex;
-    align-items: center;
+.elite {
+    font-weight: bold;
+    color: red;
 }
 
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+ 

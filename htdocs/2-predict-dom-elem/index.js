@@ -23,7 +23,7 @@ function playerDiv(player) {
   let scoreSpan = document.createElement("span");
   scoreSpan.textContent = player.highScore;
 
-  if (Number.parseInt(player.highScore) > 200) {
+  if (player.highScore > 200) {
     scoreSpan.classList.add("elite");
   }
 

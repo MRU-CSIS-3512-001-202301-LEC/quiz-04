@@ -21,12 +21,15 @@ const adventurers = [
   },
 ];
 
-let filterResult = adventurers.filter((e) => e.level > 1 && e.level < 4);
-console.log(filterResult);
-filterResult = adventurers.filter(function (a) {
-  return a.level > 1 && a.level < 4;
-});
-console.log(filterResult);
-
 let findResult = adventurers.find((e) => e.level === 5);
 console.log(findResult);
+
+let filterResults = adventurers.filter((e) => e.level > 3 && e.level < 6);
+
+console.log(filterResults);
+
+filterResults[1].alignment = "CE";
+
+for (const adv of adventurers) {
+  console.log(`${adv.level}: ${adv.alignment}`);
+}

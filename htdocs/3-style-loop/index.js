@@ -1,5 +1,9 @@
-let targetLi = document.querySelectorAll("ol li");
+function alterOL() {
+  let targetLi = document.querySelectorAll("ol li");
 
-for (let li of targetLi) {
-  li.classList.remove("faded");
+  for (let li of targetLi) {
+    li.classList.remove("faded");
+  }
 }
+
+alterOL();

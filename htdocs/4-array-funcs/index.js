@@ -22,11 +22,9 @@ const adventurers = [
 ];
 
 let findResult = adventurers.find((e) => e.level === 5);
-console.log(findResult);
+console.log(findResult.name);
 
 let filterResults = adventurers.filter((e) => e.level > 3 && e.level < 6);
-
-console.log(filterResults);
 
 filterResults[1].alignment = "CE";
 
